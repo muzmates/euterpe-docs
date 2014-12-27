@@ -1,17 +1,57 @@
-# Welcome to MkDocs
+# Overview
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
+Euterpe.js is an interactive javascript library for rendering music notation
+in pure HTML5/canvas. Interactive here means that you can attach handlers
+for different type of events, like click, mouseover, mouseout etc.
 
-## Commands
+`
+Note: Euterpe.js is currently under heavy development and avaialble set of
+features does not yet fully cover all existing musical symbols.
+`
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+# Installation
 
-## Project layout
+Euterpe.js requires folowing JS libraries:
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+* [Jquery](http://jquery.com/)
+* [Underscore](http://underscorejs.org/)
+* [KineticJS](https://github.com/ericdrowell/KineticJS/)
+* [NumericJS](http://numericjs.com/)
+
+You need to download Euterpe.js library [as well](http://www.euterpejs.org/#/download)
+
+Add the following to your site HTML code:
+
+```html
+   <script src="jquery.js"></script>
+   <script src="underscore.js"></script>
+   <script src="kinetic.js"></script>
+   <script src="numeric.js"></script>
+   <script src="euterpe.js"></script>
+```
+
+# Basic structure
+The main idea about Euterpe design is purely visual approach.
+That is the music score is composed from a visual point of view, not
+from the musical theory one. We'll talk about this approach in details later
+but for now it is sufficient to know, that you are not required to have solid
+knowledge of musical theory in order to understand and use the Euterpe library.
+
+## Nodes and Containers
+### Configuration
+### Side items
+
+## Score
+## Rows
+## Columns
+## Margins
+## Events
+
+# Plugins
+## Above-Below
+## Accidentals
+## Align
+## Note-Bar
+## Slur
+## Tab
+
